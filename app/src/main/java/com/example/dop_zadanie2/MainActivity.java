@@ -23,23 +23,23 @@ public class MainActivity extends AppCompatActivity {
     // Метод, который вызывается при нажатии на кнопку
     public void showInfo(View view) {
         // Создаем объект Car
-        Car car = new Car("Toyota", "Camry", 2023);
+        Car car = new Car("Облостная", "№1", 2000);
         car.go(); // Вызов метода go() для машины
 
         // Создаем объект Women и устанавливаем возраст
         Women woman = new Women();
-        woman.setAge(25); // Ввод возраста женщины
+        woman.setAge(70); // Ввод возраста женщины
         woman.displayInfo(); // Вывод информации о женщине
 
         // Создаем объект Men и устанавливаем возраст
         Men man = new Men();
-        man.setAge(30); // Ввод возраста мужчины
+        man.setAge(60); // Ввод возраста мужчины
         man.displayInfo(); // Вывод информации о мужчине
 
         // Формируем строку для вывода, используя данные из объектов
-        String output = "Машина " + car.getMake() + " " + car.getModel() + " едет!\n" +
-                "Это женщина, ей " + woman.getAge() + " лет\n" +
-                "Это мужчина, ему " + man.getAge() + " лет";
+        String output = "Полеклиника " + car.getMake() + " " + car.getModel() + " вызывает!\n" +
+                "женщину, ей " + woman.getAge() + " лет\n" +
+                "мужчину, ему " + man.getAge() + " лет";
 
         // Обновляем TextView с полученной строкой
         textViewOutput.setText(output); // Отображаем в TextView
